@@ -41,8 +41,16 @@ using namespace CocosDenshion;
 #endif
 
 USING_NS_CC;
-
-static cocos2d::Size designResolutionSize = cocos2d::Size(480, 320);
+USING_NS_CC;
+//////////////////////////////////////
+#if TARGET_OS_IPHONE
+//iphone7 plus 横屏(info.plist   Supported interface orientations Landscape (right home button)）
+static cocos2d::Size designResolutionSize = cocos2d::Size(480, 270);
+#elif TARGET_OS_MAC
+static cocos2d::Size designResolutionSize = cocos2d::Size(480, 320);  // pc
+#endif
+//////////////////////////////////////
+//static cocos2d::Size designResolutionSize = cocos2d::Size(480, 320);
 static cocos2d::Size smallResolutionSize = cocos2d::Size(480, 320);
 static cocos2d::Size mediumResolutionSize = cocos2d::Size(1024, 768);
 static cocos2d::Size largeResolutionSize = cocos2d::Size(2048, 1536);
