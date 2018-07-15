@@ -41,7 +41,6 @@ using namespace CocosDenshion;
 #endif
 
 USING_NS_CC;
-USING_NS_CC;
 //////////////////////////////////////
 #if TARGET_OS_IPHONE
 //iphone7 plus 横屏(info.plist   Supported interface orientations Landscape (right home button)）
